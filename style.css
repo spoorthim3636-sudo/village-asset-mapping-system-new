@@ -1,0 +1,199 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #14213d;
+}
+
+/* Navigation Bar */
+header {
+    background: #14213d;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2a9d8f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #2a9d8f;
+}
+
+/* Home Section */
+.hero {
+    min-height: 400px;
+    background: linear-gradient(
+        120deg,
+        #14213d,
+        #263f65
+    );
+    color: white;
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2a9d8f;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #21867a;
+}
+
+/* Common Sections */
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Asset Cards */
+.asset-container,
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.asset-card,
+.dashboard-card {
+    background: white;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.asset-card:hover,
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.asset-card h3,
+.dashboard-card h3 {
+    color: #2a9d8f;
+    margin-bottom: 12px;
+}
+
+.dashboard-card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Map Section */
+#map-section {
+    background: #eaf0f6;
+}
+
+#map {
+    width: 100%;
+    height: 450px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 2px solid #d0d9e5;
+    z-index: 1;
+}
+
+/* About Section */
+#about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .asset-container,
+    .dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    #map {
+        height: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .asset-container,
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
