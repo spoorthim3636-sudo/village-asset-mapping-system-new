@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Village Asset Mapping System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            VillageGIS
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#map-section">Map</a>
+            <a href="#assets">Assets</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>SMART MAPPING FOR
+            <br>BETTER VILLAGE MANAGEMENT
+        </h1>
+
+        <p>
+            Explore, locate and manage village assets
+            through an interactive GIS-based map.
+        </p>
+
+        <a href="#map-section" class="btn">
+            Explore Map
+        </a>
+    </section>
+
+    <!-- Assets Section -->
+    <section id="assets">
+        <h2>Village Assets</h2>
+
+        <div class="asset-container">
+
+            <div class="asset-card">
+                <h3>Schools</h3>
+                <p>Locate government and private schools.</p>
+            </div>
+
+            <div class="asset-card">
+                <h3>Hospitals</h3>
+                <p>Find hospitals and health centres.</p>
+            </div>
+
+            <div class="asset-card">
+                <h3>Water Tanks</h3>
+                <p>View village water facilities.</p>
+            </div>
+
+            <div class="asset-card">
+                <h3>Roads</h3>
+                <p>Explore village road connectivity.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Village Dashboard</h2>
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+                <h3>Schools</h3>
+                <p>0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Hospitals</h3>
+                <p>0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Water Tanks</h3>
+                <p>0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Roads</h3>
+                <p>0</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section id="map-section">
+        <h2>Interactive Village Map</h2>
+
+        <p>
+            Explore village assets and click the map
+            markers to view their information.
+        </p>
+
+        <div id="map"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Our Project</h2>
+
+        <p>
+            Village Asset Mapping System is a GIS-based
+            web application developed to identify,
+            locate and manage important village assets.
+
+            It provides an interactive map to display
+            schools, hospitals, water tanks, roads
+            and other community facilities.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Village Asset Mapping System
+        </p>
+        <p>Smart Mapping for Better Village Management</p>
+    </footer>
+
+    <!-- Leaflet Map Library -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
